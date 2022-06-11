@@ -1,7 +1,88 @@
 fileFormatVersion: 2
 guid: ccc6ee2d049251d4685e7330fccbf093
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2856502177864326064
+    second: Assorted buildings_0
+  - first:
+      213: -7241597018784478336
+    second: Assorted buildings_1
+  - first:
+      213: 1842843830801168201
+    second: Assorted buildings_2
+  - first:
+      213: -7289434431054737210
+    second: Assorted buildings_3
+  - first:
+      213: 5521848064976877228
+    second: Assorted buildings_4
+  - first:
+      213: 6353067222999092663
+    second: Assorted buildings_5
+  - first:
+      213: 2354104367400656079
+    second: Assorted buildings_6
+  - first:
+      213: -77571531078049395
+    second: Assorted buildings_7
+  - first:
+      213: 5346535005778235223
+    second: Assorted buildings_8
+  - first:
+      213: 4844605579583822209
+    second: Assorted buildings_9
+  - first:
+      213: -6946636807473131386
+    second: Assorted buildings_10
+  - first:
+      213: -8405398097039335490
+    second: Assorted buildings_11
+  - first:
+      213: -1936814584265352099
+    second: Assorted buildings_12
+  - first:
+      213: 5300259857538712734
+    second: Assorted buildings_13
+  - first:
+      213: -1309908616357188265
+    second: Assorted buildings_14
+  - first:
+      213: 8425338978743019110
+    second: Assorted buildings_15
+  - first:
+      213: -155372788185182267
+    second: Assorted buildings_16
+  - first:
+      213: 8073013132309131531
+    second: Assorted buildings_17
+  - first:
+      213: -6061846439508133984
+    second: Assorted buildings_18
+  - first:
+      213: -7132240280849963747
+    second: Assorted buildings_19
+  - first:
+      213: 3293755160228420009
+    second: Assorted buildings_20
+  - first:
+      213: -3777009860441923746
+    second: Assorted buildings_21
+  - first:
+      213: 3769070499292757468
+    second: Assorted buildings_22
+  - first:
+      213: 479927933260691210
+    second: Assorted buildings_23
+  - first:
+      213: -7153329192281012727
+    second: Assorted buildings_24
+  - first:
+      213: 7462039630563059433
+    second: Assorted buildings_25
+  - first:
+      213: 4398660308140972937
+    second: Assorted buildings_26
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +122,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +156,610 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Assorted buildings_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1513
+        width: 202
+        height: 173
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0546444576aab58d0800000000000000
+      internalID: -2856502177864326064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_1
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1504
+        width: 219
+        height: 179
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08bc2d801eda08b90800000000000000
+      internalID: -7241597018784478336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_2
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1459
+        width: 300
+        height: 214
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9477c6743b8139910800000000000000
+      internalID: 1842843830801168201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_3
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1317
+        width: 159
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c01b7b810ab6da90800000000000000
+      internalID: -7289434431054737210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_4
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1310
+        width: 160
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6ff902f8b81ac40800000000000000
+      internalID: 5521848064976877228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_5
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 1304
+        width: 227
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bdc905baf0aa2850800000000000000
+      internalID: 6353067222999092663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_6
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 1188
+        width: 160
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc9c1713757ba020800000000000000
+      internalID: 2354104367400656079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_7
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 1105
+        width: 156
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d81e86d7a196ceef0800000000000000
+      internalID: -77571531078049395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_8
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 1112
+        width: 156
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f4a96b245b23a40800000000000000
+      internalID: 5346535005778235223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_9
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 1120
+        width: 151
+        height: 144
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18918f75b1f7b3340800000000000000
+      internalID: 4844605579583822209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_10
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 904
+        width: 181
+        height: 262
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68019e2e0a6989f90800000000000000
+      internalID: -6946636807473131386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_11
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 919
+        width: 136
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfd936e6f60a5b80800000000000000
+      internalID: -8405398097039335490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_12
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 875
+        width: 174
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c5115b56d0f15e0800000000000000
+      internalID: -1936814584265352099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_13
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 916
+        width: 167
+        height: 137
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e948bd9224e4e8940800000000000000
+      internalID: 5300259857538712734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_14
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 556
+        width: 331
+        height: 355
+      alignment: 9
+      pivot: {x: 0.49999973, y: 0.52444327}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 34.5, y: -172.5}
+        - {x: -165.5, y: -93.5}
+        - {x: -137.5, y: 166.5}
+        - {x: -20.5, y: 177.5}
+        - {x: 87.5, y: 120.5}
+        - {x: 165.5, y: -129.5}
+      - - {x: 91.5, y: -19.5}
+        - {x: 91.5, y: -19.5}
+        - {x: 109.5, y: -19.5}
+        - {x: 109.5, y: -19.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d6ec9bd0542dde0800000000000000
+      internalID: -1309908616357188265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_15
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 576
+        width: 292
+        height: 261
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666ea3c6921dce470800000000000000
+      internalID: 8425338978743019110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_16
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 612
+        width: 114
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cfc578b54108ddf0800000000000000
+      internalID: -155372788185182267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_17
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 366
+        width: 160
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b017952dbaa190070800000000000000
+      internalID: 8073013132309131531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_18
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 366
+        width: 140
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7b622c7ceffdba0800000000000000
+      internalID: -6061846439508133984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_19
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 364
+        width: 160
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15a437b041350d90800000000000000
+      internalID: -7132240280849963747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_20
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 359
+        width: 140
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9568efdd4c5bd20800000000000000
+      internalID: 3293755160228420009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_21
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 137
+        width: 160
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f163b1b8d559bc0800000000000000
+      internalID: -3777009860441923746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_22
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 117
+        width: 160
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cddbfb356ad6e4430800000000000000
+      internalID: 3769070499292757468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_23
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 221
+        width: 140
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a077acb99eb09a600800000000000000
+      internalID: 479927933260691210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_24
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 199
+        width: 160
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90688a4eff44abc90800000000000000
+      internalID: -7153329192281012727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_25
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 35
+        width: 120
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e62997228d7e8760800000000000000
+      internalID: 7462039630563059433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assorted buildings_26
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 45
+        width: 160
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b5a52ce3e2b0d30800000000000000
+      internalID: 4398660308140972937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
