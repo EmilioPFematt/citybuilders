@@ -78,7 +78,7 @@ public class GameController : MonoBehaviour
         UnityWebRequest req = UnityWebRequest.Get(url);
         yield return req.SendWebRequest();
 
-        if(req.isNetworkError || req.isHttpError){
+        if(req.result == UnityWebRequest.Result.ConnectionError || req.result == UnityWebRequest.Result.ProtocolError){
             jsonText.text = string.Format("Error: {0}", req.error);
         }
         else {
