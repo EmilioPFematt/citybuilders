@@ -1,3 +1,9 @@
+//
+// Building.cs
+// Script para controlar el comportamiento de los edificios
+// Cemexitos
+//
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
