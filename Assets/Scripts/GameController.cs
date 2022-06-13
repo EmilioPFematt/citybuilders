@@ -7,13 +7,17 @@ using UnityEngine.Networking;
 
 public class GameController : MonoBehaviour
 {
-    
     [System.Serializable]
     public struct test
     {
         public string fact; 
         public int length; 
     }
+    [System.Serializable]
+    public struct factList {
+        public test[] data;
+    }
+
     public int oro; 
     public Text textoOro; 
     public Text jsonText; 
@@ -70,8 +74,8 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void jsonRequest(){
-        StartCoroutine(SendRequest("http://127.0.0.1:5000/api"));
+    public void jsonRequest(string url){
+        StartCoroutine(SendRequest(url));
     }
     
     IEnumerator SendRequest(string url){
@@ -82,8 +86,8 @@ public class GameController : MonoBehaviour
             jsonText.text = string.Format("Error: {0}", req.error);
         }
         else {
-            test texto = JsonUtility.FromJson<test>(req.downloadHandler.text);
-            jsonText.text = texto.fact;
+            factList texto = JsonUtility.FromJson<factList>(req.downloadHandler.text);
+            jsonText.text = texto.data[1].fact;
         }
     }
 
