@@ -70,6 +70,7 @@ public class GameController : MonoBehaviour
             if(closestTile.isOccupied == false && shortestDistance <= 2){
                 buildingToPlace.GetComponent<SpriteRenderer>().sortingOrder = closestTile.gameObject.GetComponent<SpriteRenderer>().sortingOrder; 
                 Instantiate(buildingToPlace, closestTile.transform.position, Quaternion.identity);
+                Achievements.a01Count += 1;
                 oro -= buildingToPlace.costo; 
                 buildingToPlace = null; 
                 closestTile.isOccupied = true; 
@@ -94,6 +95,7 @@ public class GameController : MonoBehaviour
             buildingToPlace = build; 
             grid.SetActive(true);
             sfxManager.PlayGainMoney();
+            Achievements.a01Count += 1;
         }
     }
 

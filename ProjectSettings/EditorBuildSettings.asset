@@ -11,7 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuScene.unity
     guid: 0dc2a88a3a65300468bd80a7b0641a6d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LogrosScene.unity
     guid: 248075236184a734f8ea7e853508f937
+  - enabled: 1
+    path: Assets/Scenes/AchievementsScene.unity
+    guid: bc0878d9e0061b3479c21519a480ea15
   m_configObjects: {}
