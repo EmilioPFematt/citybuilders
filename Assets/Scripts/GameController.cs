@@ -28,6 +28,7 @@ public class GameController : MonoBehaviour
     public CustomCursor cursor; 
 
     public SpawnPoint[] tiles; 
+    public MusicController sfxManager;
     
 
     // Update is called once per frame
@@ -54,6 +55,7 @@ public class GameController : MonoBehaviour
                 grid.SetActive(false);
                 cursor.gameObject.SetActive(false);
                 Cursor.visible = true; 
+                sfxManager.PlayBuilding();
             }
             else {
                 grid.SetActive(false);
@@ -71,6 +73,7 @@ public class GameController : MonoBehaviour
             
             buildingToPlace = build; 
             grid.SetActive(true);
+            sfxManager.PlayGainMoney();
         }
     }
 
