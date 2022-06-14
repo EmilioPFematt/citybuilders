@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 
 public class GameController : MonoBehaviour
 {
-    [System.Serializable]
+    [System.Serializable] // Test
     public struct test
     {
         public string fact; 
@@ -18,23 +18,45 @@ public class GameController : MonoBehaviour
         public test[] data;
     }
 
+    [System.Serializable]
+    public struct buildingInfo {
+        public int sprite_name; 
+        public int pos; 
+    }
+
+    [System.Serializable]
+    public struct buidlingList {
+        public buildingInfo[] data; 
+        public int len; 
+    }
+
     public int oro; 
     public Text textoOro; 
     public Text jsonText; 
 
     private Building buildingToPlace; 
     public GameObject grid; 
+    public UIController uicontroller; 
 
     public CustomCursor cursor; 
 
     public SpawnPoint[] tiles; 
+
+
+    public Building[] buildings; 
     
+    public MusicController sfxManager;
+    
+    void Start()
+    {
+        uicontroller.startTimer();
+    }
 
     // Update is called once per frame
     void Update()
     {
         textoOro.text = oro.ToString();
-
+        uicontroller.updateText();
         if(Input.GetMouseButtonDown(0) && buildingToPlace != null){
             SpawnPoint closestTile  = null; 
             float shortestDistance = float.MaxValue; 
@@ -54,6 +76,7 @@ public class GameController : MonoBehaviour
                 grid.SetActive(false);
                 cursor.gameObject.SetActive(false);
                 Cursor.visible = true; 
+                sfxManager.PlayBuilding();
             }
             else {
                 grid.SetActive(false);
@@ -68,9 +91,9 @@ public class GameController : MonoBehaviour
             cursor.gameObject.SetActive(true);
             cursor.GetComponent<SpriteRenderer>().sprite = build.GetComponent<SpriteRenderer>().sprite;
             Cursor.visible = false;
-            
             buildingToPlace = build; 
             grid.SetActive(true);
+            sfxManager.PlayGainMoney();
         }
     }
 
@@ -88,6 +111,34 @@ public class GameController : MonoBehaviour
         else {
             factList texto = JsonUtility.FromJson<factList>(req.downloadHandler.text);
             jsonText.text = texto.data[1].fact;
+        }
+    }
+
+    public void placeBuildings(){
+        StartCoroutine(GetBuildings());
+    }
+
+    IEnumerator GetBuildings(){
+        UnityWebRequest req = UnityWebRequest.Get("LocalHost:5000/api");
+        yield return req.SendWebRequest();
+        if(req.result == UnityWebRequest.Result.ConnectionError || req.result == UnityWebRequest.Result.ProtocolError){
+            jsonText.text = string.Format("Error: {0}", req.error);
+        }
+        else {
+            buidlingList datos = JsonUtility.FromJson<buidlingList>(req.downloadHandler.text);
+            jsonText.text = datos.data[0].sprite_name + " " + datos.data[0].pos + " " + datos.len;
+            for(int i = 0; i<datos.len; i++) {  
+                tiles[datos.data[i].pos].isOccupied = true; 
+                buildingToPlace = buildings[datos.data[i].sprite_name];
+                buildingToPlace.GetComponent<SpriteRenderer>().sortingOrder = tiles[datos.data[i].pos].gameObject.GetComponent<SpriteRenderer>().sortingOrder; 
+                Instantiate(buildingToPlace, tiles[datos.data[i].pos].transform.position, Quaternion.identity);
+                //oro -= buildingToPlace.costo; 
+                buildingToPlace = null; 
+                //closestTile.isOccupied = true; 
+                //grid.SetActive(false);
+                //cursor.gameObject.SetActive(false);
+                //Cursor.visible = true;
+            }
         }
     }
 
