@@ -7,6 +7,7 @@ using UnityEngine.Networking;
 
 public class GameController : MonoBehaviour
 {
+    public MusicController sfxManager;
     [System.Serializable]
     public struct test
     {
@@ -54,6 +55,7 @@ public class GameController : MonoBehaviour
                 grid.SetActive(false);
                 cursor.gameObject.SetActive(false);
                 Cursor.visible = true; 
+                sfxManager.PlayBuilding();
             }
             else {
                 grid.SetActive(false);
@@ -71,6 +73,7 @@ public class GameController : MonoBehaviour
             
             buildingToPlace = build; 
             grid.SetActive(true);
+            sfxManager.PlayGainMoney();
         }
     }
 
