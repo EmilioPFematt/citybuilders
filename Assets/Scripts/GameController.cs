@@ -20,14 +20,18 @@ public class GameController : MonoBehaviour
 
     [System.Serializable]
     public struct buildingInfo {
-        public int sprite_name; 
-        public int pos; 
+        public int id;
+        public int ciudad_id;
+        public int sprite_id; 
+        public int pos_id; 
+        public string created_at;
+        public string updated_at;
+        public string url;
     }
 
     [System.Serializable]
     public struct buidlingList {
         public buildingInfo[] data; 
-        public int len; 
     }
 
     public int oro; 
@@ -104,7 +108,6 @@ public class GameController : MonoBehaviour
     IEnumerator SendRequest(string url){
         UnityWebRequest req = UnityWebRequest.Get(url);
         yield return req.SendWebRequest();
-
         if(req.result == UnityWebRequest.Result.ConnectionError || req.result == UnityWebRequest.Result.ProtocolError){
             jsonText.text = string.Format("Error: {0}", req.error);
         }
@@ -119,25 +122,21 @@ public class GameController : MonoBehaviour
     }
 
     IEnumerator GetBuildings(){
-        UnityWebRequest req = UnityWebRequest.Get("LocalHost:5000/api");
+        UnityWebRequest req = UnityWebRequest.Get("LocalHost:3000/buildings.json");
         yield return req.SendWebRequest();
+        string newjson = "{\"data\":" + req.downloadHandler.text + "}";
         if(req.result == UnityWebRequest.Result.ConnectionError || req.result == UnityWebRequest.Result.ProtocolError){
             jsonText.text = string.Format("Error: {0}", req.error);
         }
         else {
-            buidlingList datos = JsonUtility.FromJson<buidlingList>(req.downloadHandler.text);
-            jsonText.text = datos.data[0].sprite_name + " " + datos.data[0].pos + " " + datos.len;
-            for(int i = 0; i<datos.len; i++) {  
-                tiles[datos.data[i].pos].isOccupied = true; 
-                buildingToPlace = buildings[datos.data[i].sprite_name];
-                buildingToPlace.GetComponent<SpriteRenderer>().sortingOrder = tiles[datos.data[i].pos].gameObject.GetComponent<SpriteRenderer>().sortingOrder; 
-                Instantiate(buildingToPlace, tiles[datos.data[i].pos].transform.position, Quaternion.identity);
-                //oro -= buildingToPlace.costo; 
+            buidlingList datos = JsonUtility.FromJson<buidlingList>(newjson);
+            jsonText.text = datos.data.Length.ToString();
+            for(int i = 0; i<datos.data.Length; i++) {  
+                tiles[datos.data[i].pos_id].isOccupied = true; 
+                buildingToPlace = buildings[datos.data[i].sprite_id];
+                buildingToPlace.GetComponent<SpriteRenderer>().sortingOrder = tiles[datos.data[i].pos_id].gameObject.GetComponent<SpriteRenderer>().sortingOrder; 
+                Instantiate(buildingToPlace, tiles[datos.data[i].pos_id].transform.position, Quaternion.identity); 
                 buildingToPlace = null; 
-                //closestTile.isOccupied = true; 
-                //grid.SetActive(false);
-                //cursor.gameObject.SetActive(false);
-                //Cursor.visible = true;
             }
         }
     }

@@ -221,6 +221,53 @@ MonoBehaviour:
   isOccupied: 0
   greenColor: {r: 0.022817612, g: 1, b: 0, a: 1}
   redColor: {r: 1, g: 0, b: 0.030918121, a: 0}
+--- !u!1 &130326517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 130326519}
+  - component: {fileID: 130326518}
+  m_Layer: 0
+  m_Name: MusicController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &130326518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130326517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dd0ea6c1e1a9ba40a0e40ecc14dde36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Song: {fileID: 0}
+  GainMoney: {fileID: 0}
+  BuildBuilding: {fileID: 0}
+  CitySounds: {fileID: 8300000, guid: fbf45bc647d67aa4b8e848b260a84236, type: 3}
+--- !u!4 &130326519
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130326517}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.1194627, y: 0.5331582, z: -688.3687}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &171865926
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,6 +683,7 @@ MonoBehaviour:
   - {fileID: 1725209991}
   buildings:
   - {fileID: -4670284197009618740, guid: fe5f9ffc92d159740ae100dc3e9c91f8, type: 3}
+  sfxManager: {fileID: 130326518}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
