@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; 
+using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
@@ -10,9 +11,8 @@ public class UIController : MonoBehaviour
     int month = 1, year = 2022;
 
 
-    void start()
-    {
-        
+    public void goMainMenu(){ //Send to "main" game scene
+        SceneManager.LoadScene("MenuScene");
     }
 
     public void updateText()
