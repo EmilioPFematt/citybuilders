@@ -16,7 +16,6 @@ public class MainMenuController : MonoBehaviour
     void Start()
     {
         controlMusic.PlayCitySounds();
-        
     }
 
     // Update is called once per frame
