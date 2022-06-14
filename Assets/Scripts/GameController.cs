@@ -42,7 +42,10 @@ public class GameController : MonoBehaviour
 
     public SpawnPoint[] tiles; 
 
+
     public Building[] buildings; 
+    
+    public MusicController sfxManager;
     
     void Start()
     {
@@ -73,6 +76,7 @@ public class GameController : MonoBehaviour
                 grid.SetActive(false);
                 cursor.gameObject.SetActive(false);
                 Cursor.visible = true; 
+                sfxManager.PlayBuilding();
             }
             else {
                 grid.SetActive(false);
@@ -89,6 +93,7 @@ public class GameController : MonoBehaviour
             Cursor.visible = false;
             buildingToPlace = build; 
             grid.SetActive(true);
+            sfxManager.PlayGainMoney();
         }
     }
 
