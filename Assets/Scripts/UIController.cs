@@ -8,8 +8,8 @@ public class UIController : MonoBehaviour
 {
 
     public Text TimeText; 
+    public GameController gamecontroller;
     int month = 1, year = 2022;
-
 
     public void goMainMenu(){ //Send to "main" game scene
         SceneManager.LoadScene("MenuScene");
@@ -32,6 +32,10 @@ public class UIController : MonoBehaviour
         if(month > 12){
             month = 1; 
             year+=1; 
+        }
+        foreach(SpawnPoint s in gamecontroller.tiles){
+            if(s.build != null)
+                PlayerPrefs.SetInt("Puntos", PlayerPrefs.GetInt("Puntos") + s.build.pointsPerTick); 
         }
         updateText();
         StartCoroutine(MatchTime());

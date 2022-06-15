@@ -10,7 +10,10 @@ public class SpawnPoint : MonoBehaviour
     public Color redColor; 
 
     private SpriteRenderer rend; 
+
     // Start is called before the first frame update
+    public Building build = null;
+
     void Start()
     {
         rend = GetComponent<SpriteRenderer>();    

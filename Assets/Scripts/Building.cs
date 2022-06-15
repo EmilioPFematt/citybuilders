@@ -11,13 +11,7 @@ using UnityEngine;
 public class Building : MonoBehaviour
 {
     public int costo; 
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    public int pointsPerTick; 
     // Update is called once per frame
     void Update()
     {

@@ -4,6 +4,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class PauseMenuControl : MonoBehaviour
@@ -28,5 +29,10 @@ public class PauseMenuControl : MonoBehaviour
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
+    }
+
+    public void goToTrophies(){
+        Resume();
+        SceneManager.LoadScene("AchievementsScene");
     }
 }

@@ -13,7 +13,7 @@ public class Achievements : MonoBehaviour
     public GameObject aDesc;
 
     public GameObject a01Image;
-    public static int a01Count;
+    public int a01Count = 0;
     public int a01Trigger = 5;
     public int a01Code;
     public int a01Achieved;
@@ -53,9 +53,5 @@ public class Achievements : MonoBehaviour
         aDesc.GetComponent<Text>().text = "";
         aActive = false;
         
-    }
-
-    public void goToTrophies(){
-        SceneManager.LoadScene("AchievementsScene");
     }
 }

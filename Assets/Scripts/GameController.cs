@@ -20,13 +20,13 @@ public class GameController : MonoBehaviour
 
     [System.Serializable]
     public struct buildingInfo {
-        public int id;
+        //public int id;
         public int ciudad_id;
         public int sprite_id; 
         public int pos_id; 
-        public string created_at;
-        public string updated_at;
-        public string url;
+        //public string created_at;
+        //public string updated_at;
+        //public string url;
     }
 
     [System.Serializable]
@@ -35,8 +35,10 @@ public class GameController : MonoBehaviour
     }
 
     public int oro; 
+    public int puntos; 
     public Text textoOro; 
     public Text jsonText; 
+    public Text puntosText; 
 
     private Building buildingToPlace; 
     public GameObject grid; 
@@ -50,15 +52,22 @@ public class GameController : MonoBehaviour
     public Building[] buildings; 
     
     public MusicController sfxManager;
+    public Achievements achievements; 
     
-    void Start()
+
+    void Awake()
     {
         uicontroller.startTimer();
     }
 
+    void Start() 
+    {
+        PlayerPrefs.SetInt("Puntos", 0);
+    }
     // Update is called once per frame
     void Update()
     {
+        puntosText.text = "Puntos: " + PlayerPrefs.GetInt("Puntos");
         textoOro.text = oro.ToString();
         uicontroller.updateText();
         if(Input.GetMouseButtonDown(0) && buildingToPlace != null){
@@ -73,8 +82,8 @@ public class GameController : MonoBehaviour
             }   
             if(closestTile.isOccupied == false && shortestDistance <= 2){
                 buildingToPlace.GetComponent<SpriteRenderer>().sortingOrder = closestTile.gameObject.GetComponent<SpriteRenderer>().sortingOrder; 
-                Instantiate(buildingToPlace, closestTile.transform.position, Quaternion.identity);
-                Achievements.a01Count += 1;
+                closestTile.build = Instantiate(buildingToPlace, closestTile.transform.position, Quaternion.identity);
+                achievements.a01Count += 1;
                 oro -= buildingToPlace.costo; 
                 buildingToPlace = null; 
                 closestTile.isOccupied = true; 
@@ -99,7 +108,6 @@ public class GameController : MonoBehaviour
             buildingToPlace = build; 
             grid.SetActive(true);
             sfxManager.PlayGainMoney();
-            Achievements.a01Count += 1;
         }
     }
 
@@ -142,5 +150,4 @@ public class GameController : MonoBehaviour
             }
         }
     }
-
 }
