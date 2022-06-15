@@ -15,7 +15,7 @@ public class MainMenuController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        controlMusic.PlayCitySounds();
+        controlMusic.PlayBackgroundMusic(true);
     }
 
     // Update is called once per frame

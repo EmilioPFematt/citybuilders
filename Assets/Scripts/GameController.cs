@@ -54,6 +54,7 @@ public class GameController : MonoBehaviour
     void Start()
     {
         uicontroller.startTimer();
+        sfxManager.PlayBackgroundMusic(true);
     }
 
     // Update is called once per frame
