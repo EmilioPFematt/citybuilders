@@ -58,6 +58,7 @@ public class GameController : MonoBehaviour
     void Awake()
     {
         uicontroller.startTimer();
+        sfxManager.PlayBackgroundMusic(true);
     }
 
     void Start() 
