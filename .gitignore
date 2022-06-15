@@ -1,0 +1,13 @@
+.vsconfig
+Assembly-CSharp.csproj
+Assembly-CSharp.Player.csproj
+citybuilders.sln
+Library/ArtifactDB
+Library/EditorInstance.json
+Library/EditorOnlyScriptingSettings.json
+Library/LastSceneManagerSetup.txt
+Library/Artifacts/**
+Temp/**
+Library/ScriptAssemblies/**
+Library/PackageCache/**
+UserSettings/EditorUserSettings.asset
